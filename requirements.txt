@@ -6,3 +6,4 @@ pytest-mock
 pandas
 dash
 plotly==5.21.0
+logger
