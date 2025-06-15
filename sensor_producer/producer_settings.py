@@ -1,0 +1,3 @@
+KAFKA_TOPIC = "iot_sensors"
+KAFKA_BOOTSTRAP_SERVERS = ["kafka:9092"]
+
