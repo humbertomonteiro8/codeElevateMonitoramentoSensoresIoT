@@ -49,8 +49,7 @@ codeElevateMonitoramentoSensoresIoT/
    pip install -r requirements.txt
 
 2. **Inicie os serviços com Docker**:
-
-    bash
+   ```bash
     docker-compose up --build
 
     Acesse o Dashboard:
@@ -63,10 +62,8 @@ codeElevateMonitoramentoSensoresIoT/
     - Um Kafka Consumer processa as mensagens em tempo real.
     - O Dashboard exibe gráficos interativos com:
         - Gráfico de Linha para evolução temporal dos sensores.
-        - Scatter Plot para correlação entre variáveis.
-        - Heatmap para identificar padrões sazonais.
 
 🔍 **Testes e Validação**
     Para rodar os testes:
-
+   ```bash
     pytest tests/        
