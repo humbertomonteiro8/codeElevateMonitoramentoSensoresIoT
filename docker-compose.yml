@@ -70,5 +70,15 @@ services:
     networks:
       - default
 
+  dashboard:
+    build:
+      context: .
+      dockerfile: container_setup/service_dockerfile/dashboard.Dockerfile
+    container_name: sensor_dashboard
+    ports:
+      - "8050:8050"
+    depends_on:
+      - postgres
+    restart: always
 volumes:
   pgdata:

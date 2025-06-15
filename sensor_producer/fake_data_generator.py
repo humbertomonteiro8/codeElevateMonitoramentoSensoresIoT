@@ -5,6 +5,7 @@ import random
 
 fake = Faker()
 
+
 def generate_sensor_data():
     """Gera dados simulados de sensores industriais."""
     return {

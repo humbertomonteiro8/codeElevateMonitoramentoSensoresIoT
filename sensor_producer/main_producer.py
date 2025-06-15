@@ -4,8 +4,8 @@ import time
 from fake_data_generator import generate_sensor_data
 from kafka_sender import create_producer, send_data
 
-def main():
 
+def main():
     print("[Producer] Inicializando...")
     producer = create_producer()
 
@@ -16,6 +16,7 @@ def main():
         print(f"[Producer] Enviado: {data}")
         time.sleep(2)
 
+
 if __name__ == "__main__":
-    time.sleep(60)  # espera 60 segundos antes de começar a gerar os dados
+    time.sleep(60)  # Espera 60 segundos antes de começar a gerar os dados
     main()

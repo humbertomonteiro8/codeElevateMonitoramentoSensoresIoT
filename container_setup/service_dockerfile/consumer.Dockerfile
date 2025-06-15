@@ -10,6 +10,8 @@ COPY requirements.txt .
 
 RUN pip install --no-cache-dir -r requirements.txt
 
-COPY data_consumer/ .
+COPY data_consumer/ ./data_consumer
 
-CMD ["python", "main_consumer.py"]
+ENV PYTHONPATH=/app
+
+CMD ["python", "data_consumer/main_consumer.py"]

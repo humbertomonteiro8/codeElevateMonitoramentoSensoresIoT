@@ -2,7 +2,12 @@
 
 from kafka import KafkaConsumer
 import json
-from consumer_settings import KAFKA_TOPIC, KAFKA_BOOTSTRAP_SERVERS, KAFKA_GROUP_ID
+from data_consumer.consumer_settings import (
+    KAFKA_TOPIC,
+    KAFKA_BOOTSTRAP_SERVERS,
+    KAFKA_GROUP_ID,
+)
+
 
 def start_kafka_consumer():
     """
@@ -12,8 +17,8 @@ def start_kafka_consumer():
         KAFKA_TOPIC,
         bootstrap_servers=KAFKA_BOOTSTRAP_SERVERS,
         group_id=KAFKA_GROUP_ID,
-        value_deserializer=lambda m: json.loads(m.decode('utf-8')),
-        auto_offset_reset='earliest',
-        enable_auto_commit=True
+        value_deserializer=lambda m: json.loads(m.decode("utf-8")),
+        auto_offset_reset="earliest",
+        enable_auto_commit=True,
     )
     return consumer

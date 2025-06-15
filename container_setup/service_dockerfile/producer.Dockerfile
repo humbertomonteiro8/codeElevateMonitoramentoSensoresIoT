@@ -5,6 +5,8 @@ WORKDIR /app
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
-COPY sensor_producer/ .
+COPY sensor_producer/ ./sensor_producer
 
-CMD ["python", "main_producer.py"]
+ENV PYTHONPATH=/app
+
+CMD ["python", "sensor_producer/main_producer.py"]

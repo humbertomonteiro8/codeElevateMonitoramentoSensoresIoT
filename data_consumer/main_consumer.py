@@ -1,4 +1,3 @@
-
 from kafka_consumer import start_kafka_consumer
 from consumer_utils import process_message
 import time
@@ -16,6 +15,7 @@ def main():
     finally:
         consumer.close()
 
+
 if __name__ == "__main__":
-    time.sleep(60)  # espera 60 segundos antes de a consumir os dados gerados pelo producer
+    time.sleep(60)  # Espera 60 segundos antes de consumir os dados gerados pelo producer
     main()
