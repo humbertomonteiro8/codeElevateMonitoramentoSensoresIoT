@@ -6,6 +6,6 @@ DB_SETTINGS = {
     "host": "postgres",
     "database": "iot_data",
     "user": "postgres",
-    "password": "postgres",
+    "password": "1234",
     "port": 5432
 }

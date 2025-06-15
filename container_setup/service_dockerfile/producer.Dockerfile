@@ -7,4 +7,4 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY sensor_producer/ .
 
-CMD ["python", "kafka_sender.py"]
+CMD ["python", "main_producer.py"]
