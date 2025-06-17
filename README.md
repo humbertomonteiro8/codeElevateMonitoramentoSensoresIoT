@@ -85,7 +85,6 @@ O projeto consiste em duas partes principais:
    ```bash
    docker compose up -d
 
-
 ✅ Testes
 1. Os testes estão localizados na pasta tests e podem ser executados utilizando o pytest:
     ```bash
