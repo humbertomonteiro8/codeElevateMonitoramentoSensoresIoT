@@ -1,0 +1,9 @@
+kafka-python==2.0.2
+faker==18.9.0
+psycopg2-binary
+pytest
+pytest-mock
+pandas
+dash
+plotly==5.21.0
+logger
